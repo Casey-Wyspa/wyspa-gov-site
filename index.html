@@ -68,7 +68,7 @@
 .wyspa-gov .db b{display:block;font:500 16px/1.4 var(--m);margin-top:4px;overflow-wrap:anywhere}
 .wyspa-gov .ct{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:24px}
 .wyspa-gov .ct .v{font:500 18px var(--m);color:var(--ink)}
-.wyspa-gov .stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.wyspa-gov .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
 .wyspa-gov .stats div{border-top:3px solid var(--signal);padding-top:12px}
 .wyspa-gov .stats b{display:block;font:800 clamp(36px,5vw,52px)/1 var(--d);font-stretch:125%;color:var(--ink)}
 .wyspa-gov .stats span{display:block;margin-top:6px;color:var(--muted)}
@@ -76,6 +76,7 @@
 .wyspa-gov .pp li{padding-left:16px;border-left:3px solid var(--sea);color:var(--muted)}
 .wyspa-gov .pp b{color:var(--ink);font-weight:600}
 @media (max-width:820px){
+ .wyspa-gov .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
  .wyspa-gov .hero,.wyspa-gov .two,.wyspa-gov .sh,.wyspa-gov .caps,.wyspa-gov .vs{grid-template-columns:minmax(0,1fr)}
  .wyspa-gov .ci{border-right:0!important;border-bottom:1px solid var(--rule)!important}
  .wyspa-gov .ci:last-child{border-bottom:0!important}
@@ -90,7 +91,7 @@
   <div class="lb">Wyspa Technologies · Government Programs</div>
   <h1>Racing-grade hydrodynamics for <em>uncrewed</em> maritime systems.</h1>
   <p class="lead">The hydrofoil, performance and composite engineering behind Grand Prix racing yachts, applied to uncrewed and small craft for defense and civil agencies.</p>
-  <div class="cta"><a class="btn pr" href="#wg-concept">See the foiling USV concept</a><a class="btn" href="#wg-contract">How to contract with us</a></div>
+  <div class="cta"><a class="btn pr" href="#wg-concept">See the foiling proa</a><a class="btn" href="#wg-contract">How to contract with us</a></div>
  </div>
  <figure class="foil">
   <svg viewBox="0 0 800 400" role="img" aria-label="Hydrofoil section with flow lines and lift vector">
@@ -117,13 +118,16 @@
 </section>
 
 <section id="wg-concept">
- <div class="sh"><div class="lb">Lead concept</div><div><h2>Autonomous foiling powerboat</h2><p>A small uncrewed surface vessel that flies on foils above the waves: longer range per kilowatt-hour and a steadier sensor platform than a planing hull. Uses include harbor security, logistics and ocean sensing.</p></div></div>
- <figure style="margin:0 0 28px"><img src="proa-render.png" alt="3D rendering of the Wyspa foiling motor proa: a main hull and a shorter outrigger hull joined by two cross beams, flying above the water on hydrofoils" width="1200" height="667" style="width:100%;height:auto;border:1px solid var(--rule);background:#f8fafa"><figcaption class="note">Wyspa foiling motor proa concept: 20 ft, containerizable, electric. Concept rendering; the figures below are simulation estimates for a generic 7 m electric USV, not proa test results.</figcaption></figure>
+ <div class="sh"><div class="lb">Lead concept</div><div><h2>Foiling motor proa</h2><p>An uncrewed 20 ft proa that ships in a standard container. One long hull, one outrigger and three actively controlled foils lift it clear of the waves for a steady, efficient ride. Built for harbor security, logistics and ocean sensing.</p></div></div>
+ <figure style="margin:0 0 28px"><img src="proa-render.png" alt="Rendering of the Wyspa foiling motor proa: a long main hull and a shorter outrigger joined by two cross beams, flying above the water on three hydrofoils" width="1200" height="667" style="width:100%;height:auto;border:1px solid var(--rule);background:#f8fafa"><figcaption class="note">Concept rendering.</figcaption></figure>
+ <div class="lb" style="margin-bottom:12px">Design targets</div>
  <div class="stats">
-  <div><b>~50%</b><span>less energy per mile at 23 kn</span></div>
-  <div><b>~9&times;</b><span>smoother ride in sea state 3</span></div>
+  <div><b>20 ft</b><span>fits a 20 ft shipping container</span></div>
+  <div><b>500 lb</b><span>payload</span></div>
+  <div><b>20 kn</b><span>cruise, foil-borne</span></div>
+  <div><b>SS 3</b><span>operating sea state</span></div>
  </div>
- <figure style="margin:24px 0 0"><img src="ride-comparison.png" alt="RMS vertical acceleration vs speed in sea states 2, 3 and 4: foil-borne stays between about 0.03 and 0.3 g, while the planing hull ranges from 0.3 to 1.1 g" style="width:100%;height:auto;border:1px solid var(--rule);background:#fff" loading="lazy"><figcaption class="note">Foil-borne vs planing, generic 7 m electric USV in head seas. Simulation estimates from Wyspa's model; not yet validated by tank or sea trials.</figcaption></figure>
+ <p class="note" style="font-size:15px;margin-top:24px;max-width:62ch">Next: a full-size test boat converted from a Wyspa-owned 19 ft trimaran hull, to measure takeoff, ride and power on the water.</p>
 </section>
 
 <section id="wg-past">
@@ -146,6 +150,6 @@
 </section>
 </div></div>
 
-<div class="wyspa-gov" style="padding-top:0"><div class="w" style="border-top:1px solid var(--rule);padding-top:16px;font-size:13px;color:var(--muted)">© 2026 Wyspa Technologies LLC · Concept figures are simulation estimates, not test results.</div></div>
+<div class="wyspa-gov" style="padding-top:0"><div class="w" style="border-top:1px solid var(--rule);padding-top:16px;font-size:13px;color:var(--muted)">© 2026 Wyspa Technologies LLC · Concept shown with design targets; not yet built or tested.</div></div>
 </body>
 </html>
