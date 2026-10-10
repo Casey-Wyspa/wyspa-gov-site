@@ -71,6 +71,9 @@
 .wyspa-gov .stats div{border-top:3px solid var(--signal);padding-top:12px}
 .wyspa-gov .stats b{display:block;font:800 clamp(36px,5vw,52px)/1 var(--d);font-stretch:125%;color:var(--ink)}
 .wyspa-gov .stats span{display:block;margin-top:6px;color:var(--muted)}
+.wyspa-gov .pp{list-style:none;margin:0;padding:0;display:grid;gap:12px;max-width:70ch}
+.wyspa-gov .pp li{padding-left:16px;border-left:3px solid var(--sea);color:var(--muted)}
+.wyspa-gov .pp b{color:var(--ink);font-weight:600}
 @media (max-width:820px){
  .wyspa-gov .hero,.wyspa-gov .two,.wyspa-gov .sh,.wyspa-gov .caps,.wyspa-gov .vs{grid-template-columns:minmax(0,1fr)}
  .wyspa-gov .ci{border-right:0!important;border-bottom:1px solid var(--rule)!important}
@@ -108,7 +111,7 @@
   <div class="ci"><div class="lb">Performance</div><h3>Speed &amp; hydrofoil prediction</h3><p>In-house performance software for hulls and foils, including cavitation and ventilation limits. Validated on measured TP52 and Swan 42 data.</p></div>
   <div class="ci"><div class="lb">Control</div><h3>Foil flight simulation</h3><p>Time-domain simulation of foil-borne craft in waves with closed-loop ride-height control, tested before the first launch.</p></div>
   <div class="ci"><div class="lb">Structures</div><h3>Composite engineering</h3><p>Laminate design with ply-failure analysis, plus flat cut patterns and drape prediction for production layups.</p></div>
-  <div class="ci"><div class="lb">Build</div><h3>Design to build</h3><p>Hull modeling in Rhino and SolidWorks, 3D scanning for as-built checks, and direct handoff of cut files to builders.</p></div>
+  <div class="ci"><div class="lb">Survey &amp; compliance</div><h3>Scanning, as-built &amp; stability</h3><p>FARO 3D scanning and as-built models of existing craft, stability analysis and USCG compliance documentation, plus CAD and cut files for builders.</p></div>
  </div>
 </section>
 
@@ -121,13 +124,21 @@
  <figure style="margin:24px 0 0"><img src="ride-comparison.png" alt="RMS vertical acceleration vs speed in sea states 2, 3 and 4: foil-borne stays near 0.1 to 0.3 g while the planing baseline reaches 0.5 to 1.7 g" style="width:100%;height:auto;border:1px solid var(--rule);background:#fff" loading="lazy"><figcaption class="note">Foil-borne vs planing, generic 7 m electric USV in head seas. Simulation estimates from Wyspa's model; not yet validated by tank or sea trials.</figcaption></figure>
 </section>
 
+<section id="wg-past">
+ <div class="sh"><div class="lb">Past performance</div><div><h2>Recent work</h2></div></div>
+ <ul class="pp">
+  <li><b>Electric aircraft developer.</b> Structural engineering for a commercial aerospace program.</li>
+  <li><b>Grand Prix racing yachts.</b> Performance prediction and engineering for 90+ projects, including TP52 and Swan 42 programs.</li>
+ </ul>
+</section>
+
 <section id="wg-contract">
  <div class="sh"><div class="lb">Contracting</div><div><h2>Work with us</h2><p>Small business. SBIR/STTR, BAAs, OTs and engineering subcontracts with USV builders and primes.</p></div></div>
  <div class="db">
   <div><span class="lb">Entity</span><b>Wyspa Technologies LLC</b></div>
   <div><span class="lb">UEI</span><b>NWJRCE69AWH9</b></div>
   <div><span class="lb">CAGE</span><b>Pending</b></div>
-  <div><span class="lb">NAICS</span><b>541330 · 541715 · 336612</b></div>
+  <div><span class="lb">NAICS</span><b>541330, 541370, 541380, 541690, 541715</b></div>
  </div>
  <div class="ct"><a class="v" href="mailto:casey@wyspa.tech">casey@wyspa.tech</a><span class="v">(401) 523-4920</span><a class="btn" href="Wyspa-Capability-Statement.pdf">Capability statement (PDF)</a></div>
 </section>
